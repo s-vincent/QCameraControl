@@ -8,6 +8,12 @@ The project uses QtMultimedia for webcam access.
 
 You need Qt 5, QMake, QML Quick and QtMultimedia.
 
+On Debian 11/12:
+```
+apt-get install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev qt5-qmake \
+      qml-module-qtmultimedia qml-module-qtquick2  qml-module-qtquick-controls2
+```
+
 ## Build
 
 ```
@@ -21,7 +27,7 @@ To run from the project directory:
 
 `./qcameracontrol`
 
-## License                                                                      
-                                                                                
+## License
+
 All codes are under BSD-3 license.
 

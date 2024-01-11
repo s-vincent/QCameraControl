@@ -32,14 +32,14 @@ Rectangle {
     height: parent.height
 
     Flow {
-      id: flow 
+      id: flow
       anchors.fill: parent
       spacing: 1
 
       Repeater {
         //model: QtMultimedia.availableCameras
         model: cameraInfoModel
-        delegate: 
+        delegate:
         Pane {
           id: pane
           width: 640
@@ -49,12 +49,12 @@ Rectangle {
           Column {
             property bool showList: false
             anchors.left: parent.left
-            anchors.right: parent.right 
-            spacing: 0 
+            anchors.right: parent.right
+            spacing: 0
 
             Button {
               visible: true
-              anchors.left: parent.left 
+              anchors.left: parent.left
               anchors.right: parent.right
 
               text: deviceDescription
@@ -74,8 +74,8 @@ Rectangle {
 
             Pane {
               id: paneSettingsList
-              anchors.left: parent.left 
-              anchors.right: parent.right 
+              anchors.left: parent.left
+              anchors.right: parent.right
               visible: height > 0
               height: shown ? implicitHeight : 0
               padding: 0
@@ -120,6 +120,6 @@ Rectangle {
         }
       }
     }
-  } 
+  }
 }
 

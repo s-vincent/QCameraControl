@@ -81,7 +81,7 @@ QHash<int, QByteArray> CameraInfoModel::roleNames() const
 
 void CameraInfoModel::updateCameras()
 {
-  // If camera is currently running (i.e. started) it will not be in 
+  // If camera is currently running (i.e. started) it will not be in
   // availableCameras().
   //
   // This method will only take care of new camera.
